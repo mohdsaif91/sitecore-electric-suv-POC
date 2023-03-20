@@ -1,0 +1,7 @@
+id: updateform-item1
+displayName: updateform-item1
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-UpdateForm-Item-template
+fields:
+  item: I agree to receive a call back from Mahindra & Mahindra and associated agencies and organizations regarding my interest in Mahindra brands.
+          I also agree to website's <a href="#" about="_blank">Terms and Conditions</a> and <a href="#" about="_blank" >Privacy Policy</a>.

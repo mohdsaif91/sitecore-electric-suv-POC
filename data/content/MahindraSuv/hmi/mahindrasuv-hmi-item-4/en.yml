@@ -1,0 +1,9 @@
+id: mahindrasuv-hmi-item-4
+displayName: MahindraSuv hmi - Item 4
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Technology-Item-Template
+fields:
+  imgWithTitle: PLUG AND PLAY
+  imgWithDec: Listen, watch, share - INGLO makes it effortless to interact with the world on your terms.
+  imgWithDecImg:
+    src: /data/media/img/Technology/Hmi/plug&play.webp

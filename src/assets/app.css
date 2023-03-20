@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oxanium:wght@200;300;400&display=swap');
+
+@import url('../components/BannerComponent.module.css');
+@import url('../components/BrandsComponent.module.css');
+@import url('../components/ConnectComponent.module.css');
+@import url('../components/FooterComponent.module.css');
+@import url('../components/GalleryComponent.module.css');
+@import url('../components/HeaderComponent.module.css');
+@import url('../components/MediaComponent.module.css');
+@import url('../components/MediaRoomComponent.module.css');
+@import url('../components/TechnologyComponent.module.css');
+@import url('../components/YouTubeComponent.module.css');
+@import url('../components/TechnologyComponents/TechnologyGenericComponent.module.css');
+
+/*
+  Hides Sitecore editor markup,
+  if you run the app in connected mode while the Sitecore cookies
+  are set to edit mode.
+*/
+.scChromeData,
+.scpm {
+  display: none !important;
+}
+
+/*
+  Styles for default JSS error components
+*/
+.sc-jss-editing-error,
+.sc-jss-placeholder-error {
+  padding: 1em;
+  background-color: lightyellow;
+}
+
+/* 
+  Style for default content block
+*/
+.contentTitle {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.nav-links {
+  font-family: Oxanium, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 0 10px;
+  outline: none;
+}
+
+.nav-links:hover {
+  color: #64dcff;
+  -webkit-animation: none;
+  animation: none;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* overflow-x: hidden; */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.main-container {
+  margin: 0 !important;
+  background-color: #1f1f1f;
+}
+
+.h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 1.3;
+  font-weight: 300;
+  margin: 0 0 1em -0.07em;
+  font-family: Oxanium, sans-serif;
+}
+
+.is-view:after {
+  width: 80px !important;
+  border-width: 1px;
+  box-shadow: 0 0 14px 4px #64dcff;
+  content: '';
+  margin-top: 8px;
+  display: block;
+  width: 0;
+  height: 3px;
+  border-radius: 3px;
+  background: #fff;
+  border: 0 solid rgba(100, 220, 255, 0.5);
+  margin-bottom: 50px;
+  -webkit-transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.cardWithImageHeading {
+  font-family: Oxanium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+  text-align: left;
+}
+
+.cardWithImageHeading:after {
+  content: '';
+  margin-top: 8px;
+  display: block;
+  width: 0;
+  height: 3px;
+  border-radius: 3px;
+  background: #fff;
+  border: 0 solid rgba(100, 220, 255, 0.5);
+  margin-bottom: 50px;
+  -webkit-transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.c-p {
+  cursor: pointer;
+}
+
+.no-padding {
+  padding: 0 0 0 0 !important;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.heroBannerTitle {
+  font-weight: 300;
+  font-family: Oxanium, sans-serif;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  max-height: 296px;
+}
+
+.typeReveal {
+  display: block;
+  white-space: normal !important;
+  width: 850px;
+}
+
+.connect-description {
+  color:#ffffff;
+  font-size: 58px;
+  width: 684px;
+}
+
+.p-tag-description {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 450px) and (min-width: 320px) {
+  .heroBannerTitle {
+    font-size: calc(30px + 40 * ((100vw - 320px) / 1120));
+  }
+  .typeReveal {
+    width: 396px;
+  }
+  .connect-description {
+    width: auto;
+    font-size: 50px;
+    line-height: 1;
+  }
+}
+
+/* TABLET */
+@media only screen and (max-width: 850px) and (min-width: 700px) {
+  .heroBannerTitle {
+    font-size: 47px;
+  }
+  .typeReveal {
+    width: 647px;
+  }
+  .typingDemo {
+    max-width: 647px;
+  }
+  .connect-description {
+    font-size: 47px;
+    margin-bottom: 0;
+    width: 54px;
+  }
+}
+
+.typingDemo {
+  animation: typewriter 2s steps(44) 1s 1 normal both;
+  overflow: hidden;
+  width: 22ch;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+} */
+
+/* @keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */

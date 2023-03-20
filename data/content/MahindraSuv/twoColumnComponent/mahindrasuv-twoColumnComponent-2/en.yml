@@ -1,0 +1,10 @@
+id: mahindrasuv-twoColumnComponent-2
+displayName: MahindraSuv TwoColumnWithImage - Item 2
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-TwoColumnWithImageComponent-Item-Template
+fields:
+  cardText: Opening spaces to a completely reimagined world. For those who want to define their life's journey and be who they want to be. Audacious and a trailblazer.
+  cardIcon:
+    src: /data/media/img/TwoColumn/BE.svg
+  cardImage:
+    src: /data/media/img/TwoColumn/female.webp

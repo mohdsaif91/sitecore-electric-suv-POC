@@ -1,0 +1,131 @@
+.mainContainer {
+  background-image: -webkit-linear-gradient(top, black, #1f1f1f 65%, white 35%);
+  width: 100%;
+}
+
+.cardWithImageContainer {
+  padding-top: 200px;
+}
+
+.cardWithImageHeading {
+  font-family: Oxanium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.imgParent {
+  margin: 0 128px 50px 128px;
+}
+
+.cardIcon {
+  width: 118px;
+  height: 145px;
+  margin: 0 128px 50px 128px;
+}
+
+.cardBody {
+  padding: 32px 96px;
+  text-align: center;
+}
+
+.humanImage {
+  overflow: hidden;
+  position: relative;
+  padding-top: 90%;
+}
+
+.humanImageFigure {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+}
+
+.cardImage {
+  display: block;
+  max-width: 100%;
+  height: auto;  
+}
+
+.cardIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardWithImage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding: 0 !important;
+  background: #000;
+}
+
+.cardTtext {
+  text-align: center;
+  margin-bottom: 48px;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.contentContainer {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 450px) and (min-width: 360px) {
+  .mainContainer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .vh100 {
+    height: auto;
+  }
+
+  .brands-heading {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .cardWithImageContainer {
+    padding: 80px 20px 0 20px;
+  }
+
+  .twoColumnWithImageHeading {
+    padding: 0 0;
+  }
+
+  .cardBody {
+    padding: 20px;
+  }
+
+  .cardIcon {
+    margin: 0px 96px 50px 96px;
+  }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 700px) {
+  .cardBody {
+    padding: 30px 50px;
+  }
+}
+
+@media only screen and (max-width: 720px) and (min-width: 700px) {
+  .cardWithImageContainer {
+    max-width: 100%;
+  }
+}

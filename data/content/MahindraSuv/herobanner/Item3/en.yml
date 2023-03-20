@@ -1,0 +1,16 @@
+id: herobanner-item3
+displayName: herobanner-item3
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Herobanner-Item-template
+fields:
+  mediaType: video
+  media: 
+    src: /data/media/video/HeroBanner/heroBanner01.webm
+  mediaMobile: null
+  mediaText: <h1 className="heroBannerTitle">
+    <span className="typeReveal is-complete" data-orig-text="5  E-SUVs" data-delay="250"><span className="live">5  E-SUVs</span><span className="ghost">5  E-SUVs</span></span>
+    <span className="typeReveal is-complete" data-orig-text="2 Revolutionary Brands" data-delay="500"><span className="live">2 Revolutionary Brands</span><span className="ghost">2 Revolutionary Brands</span></span>
+    <span className="typeReveal is-complete" data-orig-text="1 Futuristic Vision" data-delay="750"><span className="live">1 Futuristic Vision</span><span className="ghost">1 Futuristic Vision</span></span>
+    </h1>
+  url: '#'
+  buttonList:

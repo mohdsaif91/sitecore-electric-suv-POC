@@ -1,0 +1,9 @@
+id: mahindrasuv-hmi-item-2
+displayName: MahindraSuv hmi - Item 2
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Technology-Item-Template
+fields:
+  imgWithTitle: 360° VISION
+  imgWithDec: With 5 Radars-1 Vision technology, INGLO is futureproofed for L2+ autonomous driving and ADAS.
+  imgWithDecImg:
+    src: /data/media/img/Technology/Hmi/360vision.webp

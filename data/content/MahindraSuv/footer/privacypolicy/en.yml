@@ -1,0 +1,7 @@
+id: footer-privacy
+displayName: privacy
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Footer-Item-Template
+fields:
+  label: Privacy Policy
+  url: "#"

@@ -1,0 +1,7 @@
+id: mahindrasuv-gallery-image-1
+displayName: galleryImage
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Gallery-Item-Template
+fields:
+  galleryImage:
+    src: /data/media/img/Gallery/Slides/image1.webp

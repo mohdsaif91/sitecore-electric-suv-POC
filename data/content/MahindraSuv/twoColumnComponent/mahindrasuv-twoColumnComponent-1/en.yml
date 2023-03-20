@@ -1,0 +1,10 @@
+id: mahindrasuv-twoColumnComponent-1
+displayName: MahindraSuv TwoColumnWithImage - Item 1
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-TwoColumnWithImageComponent-Item-Template
+fields:
+  cardText: Honouring our legacy while embracing the future. For those who have the passion to live life beyond boundaries while making a difference. Authentic yet futuristic.
+  cardIcon:
+    src: /data/media/img/TwoColumn/mahindra_logo.svg
+  cardImage:
+    src: /data/media/img/TwoColumn/male.webp

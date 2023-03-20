@@ -1,0 +1,20 @@
+id: herobanner-item1
+displayName: herobanner-item1
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Herobanner-Item-template
+fields:
+  mediaType: image
+  media:
+    src: /data/media/img/HeroBanner/bannerImg1.webp
+  mediaMobile:
+    src: /data/media/img/HeroBanner/XUV400_Desktop_mobile.webp
+  mediaText: <h1 class="heroBannerTitle">
+    <span class="typeReveal" data-orig-text="" data-delay="250">
+    <span class="live"></span><span class="ghost">
+    </span>
+    </span></h1>
+  url: #
+  buttonList:
+    - id: hero-1-button-item1
+    - id: hero-1-button-item2
+    # - id: hero-1-button-item3

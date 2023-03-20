@@ -1,0 +1,9 @@
+id: mahindrasuv-platform-item-3
+displayName: MahindraSuv platform - Item 3
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Technology-Item-Template
+fields:
+  imgWithTitle: INCREDIBLE FAST CHARGING
+  imgWithDec: Next-generation battery science charging up to 80% in less than 30 minutes.
+  imgWithDecImg:
+    src: /data/media/img/Technology/Platform/charging.webp

@@ -1,0 +1,11 @@
+id: mahindrasuv-mediaroom-media-001
+displayName: MahindraSuv Media Room - Item 1
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Media-Room-Item-Template
+fields:
+  image:
+    src: /data/media/img/MediaRoom/partnership-press-release-3.webp
+  date: 15.08.2022
+  desc: |
+    Mahindra unveils five Electrifying SUVs under two brands based on the purpose-built INGLO platform
+  url: https://MahindraElectricSuv-cdn.azureedge.net/-/media/MahindraAuto/data/media/PdfFiles/15Aug-Final-PR-BEV-Unveil.pdf

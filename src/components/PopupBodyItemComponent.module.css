@@ -1,0 +1,19 @@
+import { Text, Field, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ComponentProps } from 'lib/component-props';
+
+type PopupBodyItemComponentProps = ComponentProps & {
+  fields: {
+    header: Field<string>;
+    body: Field<string>;
+    image: Field<string>;
+  };
+};
+
+const PopupBodyItemComponent = (props: PopupBodyItemComponentProps): JSX.Element => (
+  <div>
+    <p>PopupBodyItemComponent Component</p>
+    <Text field={props.fields.header} />
+  </div>
+);
+
+export default withDatasourceCheck()<PopupBodyItemComponentProps>(PopupBodyItemComponent);

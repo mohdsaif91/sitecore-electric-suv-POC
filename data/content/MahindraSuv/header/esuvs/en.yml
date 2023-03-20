@@ -1,0 +1,7 @@
+id: header-esuvs
+displayName: esuvs
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Header-Item-template
+fields:
+  label: eSUVs
+  url: "#esuvs"

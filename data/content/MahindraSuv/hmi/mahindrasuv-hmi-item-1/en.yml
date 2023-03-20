@@ -1,0 +1,9 @@
+id: mahindrasuv-hmi-item-1
+displayName: MahindraSuv hmi - Item 1
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Technology-Item-Template
+fields:
+  imgWithTitle: PANORAMIC DISPLAY
+  imgWithDec: Edge-to-edge vista display with heads-up functionality creates an intuitive and immersive experience for both the driver and co-driver.
+  imgWithDecImg:
+    src: /data/media/img/Technology/Hmi/panaromic.webp

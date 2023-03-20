@@ -1,0 +1,209 @@
+.navbar {
+  background-color: black !important;
+  position: sticky !important;
+  padding: 8px 100px;
+  max-width: 100% !important;
+}
+.navbar div button svg {
+  font-size: 2em !important;
+  color: white !important;
+}
+.nav-container {
+  max-width: 100%;
+}
+
+.navlinks {
+  color: white !important;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  font-family: Oxanium;
+}
+.navlinks svg,
+.spbtn2 svg {
+  font-size: 1.2rem;
+  color: orange;
+  visibility: inherit !important;
+  position: relative;
+  left: 0px;
+}
+
+.navlinks svg:hover,
+.spbtn2 svg:hover {
+  position: relative;
+
+  transition: 0.3s;
+  left: +5px;
+}
+
+.navlinks:hover {
+  color: skyblue !important;
+}
+
+.navCanvas div div .navlinks.active:not(.button):after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  border-width: 1px;
+  -webkit-box-shadow: 0 0 14px 4px #64dcff;
+  box-shadow: 0 0 14px 4px #64dcff;
+}
+.navlinks.active:not(.button):after {
+  position: relative;
+  left: -1px;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin: auto;
+  border-radius: 3px;
+  background: #fff;
+  border: 0 solid rgba(100, 220, 255, 0.5);
+  -webkit-transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.spbtn1 {
+  color: white !important;
+  font-size: 0.8rem;
+  letter-spacing: 0.18rem;
+  border: 1px solid white !important;
+  border-radius: 0px;
+  font-family: Oxanium;
+}
+
+.spbtn1:hover {
+  color: black !important;
+  background-color: orange !important;
+  border: 1px solid orange !important;
+}
+.spbtn2 {
+  text-decoration: none !important;
+  border: none !important;
+  color: white !important;
+  font-family: Oxanium;
+  font-size: 0.8rem;
+  letter-spacing: 0.18rem;
+}
+.spbtn2:hover {
+  color: skyblue !important;
+}
+
+.navCanvas {
+  background-color: #1f1f1f !important;
+  width: 400px !important;
+  max-width: 75% !important;
+}
+.navCanvas div div {
+  align-items: flex-start !important;
+  padding-left: 1rem !important;
+}
+
+.sideNavOffcanvas h1 {
+  color: black !important;
+  font-family: Oxanium;
+  font-weight: 100;
+  letter-spacing: 0.4rem;
+}
+
+.offcanvas.offcanvas-start {
+  top: 0;
+  left: 0;
+  width: var(--bs-offcanvas-width);
+  border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+  transform: translateX(-100%);
+}
+.offcanvas,
+.offcanvas-xxl,
+.offcanvas-xl,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm {
+  --bs-offcanvas-zindex: 1045;
+  --bs-offcanvas-width: 40rem;
+  --bs-offcanvas-height: 30vh;
+  --bs-offcanvas-padding-x: 1rem;
+  --bs-offcanvas-padding-y: 1rem;
+  --bs-offcanvas-color: ;
+  --bs-offcanvas-bg: #fff;
+  --bs-offcanvas-border-width: 1px;
+  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+  --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.clsBtn button {
+  font-size: x-large;
+  color: black !important;
+  padding-top: 0.9rem !important;
+}
+.clsBtn button:hover {
+  font-size: x-large;
+  color: #1f1f1f;
+}
+.clsBtn button:focus {
+  font-size: x-large;
+  color: #1f1f1f;
+  box-shadow: none !important;
+}
+
+.updateForm div div input,
+select {
+  border-radius: 1px;
+  box-shadow: none;
+  font-family: Oxanium;
+}
+
+.updateForm div div input:focus,
+select:focus {
+  border: 2px solid orange !important;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: none !important;
+}
+.updateForm div div select {
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+}
+.updateForm div div label {
+  font-size: 14px;
+}
+.updateForm div button {
+  border-radius: 0;
+  font-family: Oxanium;
+}
+.updateForm div button:hover {
+  background-color: white;
+  color: #1f1f1f;
+}
+
+@media only screen and (max-width: 850px) and (min-width: 700px) {
+  .navbar {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 340px) {
+  .navbar {
+    padding: 0;
+  }
+  .nav-container {
+    margin-right: 8px;
+    margin-left: 8px;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width:1350px) and (min-width: 1200px) {
+  .navbar {
+    padding: 8px 40px;
+  }
+}

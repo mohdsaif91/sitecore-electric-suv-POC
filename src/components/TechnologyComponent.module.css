@@ -1,0 +1,153 @@
+.technology-container {
+  background-color: #000;
+  padding-top: 294px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  height: 700px;
+}
+
+.technology-content {
+  position: relative;
+  top: -980px;
+}
+
+.heading {
+  margin-bottom: 27px;
+}
+
+.graphic-image {
+  margin: 0 284px;
+}
+
+.graphic-sub-heading {
+  text-align: center;
+  font-weight: 300;
+  margin: 0 0 1em -0.07em;
+  font-family: Oxanium, sans-serif;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.graphic-body {
+  text-align: center;
+  margin: 0 326px 70px 326px;
+  max-width: 496px;
+  color: #ffffff;
+}
+
+.cardWithImageHeading {
+  color: #ffffff;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-btn {
+  font-family: Oxanium, sans-serif;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 15px 25px;
+  margin: 20px;
+  background: transparent;
+  white-space: nowrap;
+  color: #fff;
+  background: #000;
+  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+
+.graphic-body-img {
+  width: 100%;
+}
+
+.tech-btn:hover {
+  background-color: #fc9f39;
+  border-color: #fc9f39;
+  color: #000;
+}
+
+@media only screen and (max-width: 450px) and (min-width: 340px) {
+  .graphic-image {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  .graphic-body {
+    margin: 0 0 40px 0;
+  }
+
+  .graphic-body-container {
+    padding: 0 !important;
+  }
+
+  .technology-row {
+    margin: 0 !important;
+  }
+
+  .technology-container {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .technology-content {
+    top: 100px;
+  }
+}
+
+/* TABLET */
+@media only screen and (max-width: 850px) and (min-width: 700px) {
+  .technology-content {
+    top: -815px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .graphic-image {
+    margin: 0 72px;
+    max-width: 80%;
+  }
+
+  .graphic-sub-heading {
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .graphic-body {
+    margin-left: 112px;
+    margin-right: 112px;
+  }
+
+  .technology-container {
+    height: 454px;
+    background-color: inherit;
+  }
+
+  .graphic-body-img {
+    padding-top: 136px;
+  }
+}
+
+@media only screen and (max-width: 760px) and (min-width: 700px) {
+  .graphic-body {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+}

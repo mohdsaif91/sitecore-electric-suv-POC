@@ -1,0 +1,7 @@
+id: hero-1-button-item2
+displayName: hero-1-button-item2
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Buttons-Template
+fields:
+  label: Meet XUV400
+  url: #

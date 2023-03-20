@@ -1,0 +1,9 @@
+id: mahindrasuv-hmi-item-3
+displayName: MahindraSuv hmi - Item 3
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Technology-Item-Template
+fields:
+  imgWithTitle: ULTIMATE CONNECTIVITY
+  imgWithDec: Embedded 5G network capability and Over The Air updates deliver a go-anywhere experience.
+  imgWithDecImg:
+    src: /data/media/img/Technology/Hmi/5Gconnectivity.webp

@@ -1,0 +1,7 @@
+id: footer-terms
+displayName: terms
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Footer-Item-Template
+fields:
+  label: Terms of Use
+  url: "#"

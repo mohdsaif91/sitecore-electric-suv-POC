@@ -1,0 +1,9 @@
+id: mahindrasuv-platform-item-2
+displayName: MahindraSuv platform - Item 2
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Technology-Item-Template
+fields:
+  imgWithTitle: ENDLESS MODULARITY
+  imgWithDec: Variable lengths, widths, wheelbases and overhangs create an SUV that fits your lifestyle perfectly.
+  imgWithDecImg:
+    src: /data/media/img/Technology/Platform/endless.webp

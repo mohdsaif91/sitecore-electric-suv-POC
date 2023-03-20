@@ -1,0 +1,11 @@
+id: mahindrasuv-mediaroom-media-003
+displayName: MahindraSuv Media Room - Item 3
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Media-Room-Item-Template
+fields:
+  image:
+    src: /data/media/img/MediaRoom/brand-press-release-1.webp
+  date: 15.08.2022
+  desc: |
+    Mahindra and Volkswagen Explore Strategic Alliance to Accelerate Electrification of Indian Automotive Market
+  url: https://MahindraElectricSuv-cdn.azureedge.net/-/media/MahindraAuto/data/media/PdfFiles/VW-and-Mahindra-Press-Release-India.pdf

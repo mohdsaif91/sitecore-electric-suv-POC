@@ -1,0 +1,9 @@
+id: mahindrasuv-platform-item-1
+displayName: MahindraSuv platform - Item 1
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: MahindraSuv-Technology-Item-Template
+fields:
+  imgWithTitle: THRILL ON TAP
+  imgWithDec: Up to 250 kW power in All-Wheel Drive intending to take you from 0-100 km/h in 5-6 seconds
+  imgWithDecImg:
+    src: /data/media/img/Technology/Platform/rear.webp
