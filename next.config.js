@@ -23,7 +23,14 @@ const nextConfig = {
     PUBLIC_URL: publicUrl,
   },
 
-  i18n: {
+  i18n:!process.env.EXPORT_MODE? {
+    // These are all the locales you want to support in your application.
+    // These should generally match (or at least be a subset of) those in Sitecore.
+    locales: ['en'],
+    // This is the locale that will be used when visiting a non-locale
+    // prefixed path e.g. `/styleguide`.
+    defaultLocale: packageConfig.language,
+  }:{
     // These are all the locales you want to support in your application.
     // These should generally match (or at least be a subset of) those in Sitecore.
     locales: ['en'],
@@ -35,7 +42,7 @@ const nextConfig = {
   // Enable React Strict Mode
   reactStrictMode: true,
 
-  async rewrites() {
+  rewrites:!process.env.EXPORT_MODE && (async ()=> {
     // When in connected mode we want to proxy Sitecore paths off to Sitecore
     return [
       // API endpoints
@@ -54,7 +61,7 @@ const nextConfig = {
         destination: `${jssConfig.sitecoreApiHost}/layouts/system/:path*`,
       },
     ];
-  },
+  }),
 };
 
 module.exports = {
@@ -78,7 +85,8 @@ module.exports = {
         source: "/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
-          { key: "Access-Control-Allow-Origin", value: "https://devnew.mahindraelectricautomobile.com" },
+          // { key: "Access-Control-Allow-Origin", value: "https://devnew.mahindraelectricautomobile.com" },
+          { key: "Access-Control-Allow-Origin", value: "localhost" },
           { key: "Access-Control-Allow-Methods", value: "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
           { key: "Access-Control-Allow-Headers", value: "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" },
         ]

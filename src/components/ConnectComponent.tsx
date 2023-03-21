@@ -19,47 +19,13 @@ type ConnectComponentProps = ComponentProps & {
   };
 };
 
-let oldScrollY = 0;
 
 const ConnectComponent = (props: ConnectComponentProps): JSX.Element => {
-  const [scrollY, setScrollY] = useState(0);
   const [render, setRender] = useState(false);
-  let refNumber = 0;
 
   useEffect(() => {
     return () => {
       setRender(false);
-    };
-  }, []);
-
-  const handleScroll = () => {
-    const connectElement = document.querySelector('#connect');
-    const connectElementPosition: any = connectElement?.getBoundingClientRect();
-
-    if (connectElementPosition.top < window.innerHeight && connectElementPosition.bottom >= 0) {
-      if (!render) {
-        setRender(true);
-      }
-    }
-
-    if (window.scrollY > oldScrollY) {
-      if (16 > refNumber) {
-        refNumber++;
-        setScrollY(refNumber);
-      }
-    } else {
-      if (refNumber > -18) {
-        refNumber--;
-        setScrollY(refNumber);
-      }
-    }
-    oldScrollY = window.scrollY;
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -83,9 +49,8 @@ const ConnectComponent = (props: ConnectComponentProps): JSX.Element => {
           <Col lg="7" md="6" sm="12" className="right-image-container">
             <figure className="connect-figure rellax">
               <NextImage
-                style={{ transform: `translate3d(0px, ${scrollY}%, 0px)` }}
                 className="right-image"
-                field={props.fields.rightImage || ''}
+                field = {props.fields.rightImage || ''}
                 alt="Mahindra"
                 loading="lazy"
                 layout="fill"

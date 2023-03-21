@@ -20,7 +20,10 @@ const PopupBodyItemComponent = (props: PopupBodyItemComponentProps): JSX.Element
       <Text field={props.fields.body} />
     </div>
     <div className="card-text">
-      <NextImage field = {props.fields.image} alt={props.fields.imageAltText.value} loading="lazy" />
+      <NextImage 
+        field = {props.fields.image} 
+        alt={props.fields.imageAltText.value} 
+        loading="lazy" />
     </div>
   </div>
 );

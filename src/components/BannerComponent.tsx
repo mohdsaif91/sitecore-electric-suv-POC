@@ -1,4 +1,9 @@
-import { Field, ImageField, NextImage, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  Field,
+  ImageField,
+  NextImage,
+  withDatasourceCheck,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 // import Image from 'next/image';
 
@@ -21,9 +26,9 @@ const BannerComponent = (props: BannerComponentProps): JSX.Element => (
                 className="banner-image"
                 priority
                 alt="Group Hero Shot"
-                width="1920"
-                height="1400"
-                field = {props.fields.bannerImage}
+                width="1400"
+                height="972"
+                field={props.fields.bannerImage}
               ></NextImage>
             </figure>
           </div>

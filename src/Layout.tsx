@@ -24,24 +24,24 @@ interface RouteFields {
 
 const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   useEffect(() => {
-    Aos.init();
+    
+    Aos.init();    
   }, []);
-
+  
   const { route } = layoutData.sitecore;
+
   const fields = route?.fields as RouteFields;
-  console.log('================================');
-  console.log('2', ' LAYOUT PAGE++++++++++++++++++');
 
   return (
     <>
       <Scripts />
       <Head>
         <title>{fields.pageTitle.value.toString() || 'Page'}</title>
-        <link rel="icon" href={`${publicUrl}/favicon.ico`} />
-      </Head>
+        <link rel="icon" href={`${publicUrl}/favicon.ico`} />        
+      </Head>      
       <div className="main-container" data-spy="scroll" data-target="#suv-navbar" data-offset="0">
         {route && <Placeholder name="jss-main" rendering={route} />}
-      </div>
+       </div>
     </>
   );
 };

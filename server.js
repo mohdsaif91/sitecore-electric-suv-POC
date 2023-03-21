@@ -1,10 +1,13 @@
 const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
+const { getPublicUrl } = require('@sitecore-jss/sitecore-jss-nextjs')
 
 const dev = process.env.NODE_ENV !== 'production'
 //const hostname = 'rsg-dev-auto-ci-017-nextjs.scm.azurewebsites.net'
-const hostname = 'devnew.mahindraelectricautomobile.com'
+// const hostname = 'devnew.mahindraelectricautomobile.com'
+const hostname = 'localhost'
+
 const port = process.env.PORT || 3000
 
 // when using middleware `hostname` and `port` must be provided below
@@ -18,11 +21,15 @@ app.prepare().then(() => {
       // This tells it to parse the query portion of the URL.
       const parsedUrl = parse(req.url, true)
       const { pathname, query } = parsedUrl
+      const publicUrl = getPublicUrl();
+
 
       // app.setAssetPrefix('https://MahindraElectricSuv-cdn.mahindraelectricautomobile.com')
-      app.setAssetPrefix('.')
+      // app.setAssetPrefix('.')
+      app.setAssetPrefix(publicUrl)
 
-    res.setHeader("Access-Control-Allow-Origin", "https://devnew.mahindraelectricautomobile.com");
+    // res.setHeader("Access-Control-Allow-Origin", "https://devnew.mahindraelectricautomobile.com");
+    res.setHeader("Access-Control-Allow-Origin", "localhost");
     res.setHeader(
       'Access-Control-Allow-Headers',
       'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'

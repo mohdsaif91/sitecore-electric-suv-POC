@@ -1,10 +1,4 @@
-import {
-  withDatasourceCheck,
-  Field,
-  Text,
-  ImageField,
-  NextImage,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { withDatasourceCheck, Field, Text, ImageField, NextImage } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { Col, Container, Row } from 'react-bootstrap';
 
@@ -45,12 +39,11 @@ const TwoColumnWithImage = (props: TwoColumnWIthImageProps): JSX.Element => {
                   <figure className={`${TCWICCSS.humanImageFigure}`}>
                     <NextImage
                       className={`${TCWICCSS.cardImage}`}
-                      field={m.fields.cardImage}
+                      field = {m.fields.cardImage}
                       alt="Mahindra"
                       loading="lazy"
                       width={600}
                       height={500}
-                      layout="fill"
                     />
                   </figure>
                 </div>
@@ -58,10 +51,9 @@ const TwoColumnWithImage = (props: TwoColumnWIthImageProps): JSX.Element => {
                   <div className={`${TCWICCSS.cardIconContainer}`}>
                     <NextImage
                       className={`${TCWICCSS.cardIcon}`}
-                      field={m.fields.cardIcon}
+                      field = {m.fields.cardIcon}
                       alt="Mahindra"
                       loading="lazy"
-                      layout="fill"
                       width={150}
                       height={90}
                     />

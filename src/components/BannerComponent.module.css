@@ -25,14 +25,6 @@ main > .separator > section {
   padding-bottom: 60px;
 }
 
-.label.is-inview:after {
-  border-width: 1px;
-  -webkit-box-shadow: 0 0 14px 4px #64dcff;
-  box-shadow: 0 0 14px 4px #64dcff;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-}
-
 @media only screen and (max-width: 450px) and (min-width: 360px) {
   .separator {
     border: none;
@@ -41,7 +33,7 @@ main > .separator > section {
     width: 100%;
     font-size: 32vw;
   }
-} /* src-set="/mahindraelectricimages/images/group-hero-shot_hua79e853cd7731569a4bfba97803ec937_1845819_29f1876695ee710db04d6782123702ea.webp 480w, /mahindraelectricimages/images/group-hero-shot_hua79e853cd7731569a4bfba97803ec937_1845819_061cc8728c42498e8b873b5adf7c9552.webp 720w, /mahindraelectricimages/images/group-hero-shot_hua79e853cd7731569a4bfba97803ec937_1845819_beab19d35b1b0e058b1451f4c11bde42.webp 1080w, /mahindraelectricimages/images/group-hero-shot_hua79e853cd7731569a4bfba97803ec937_1845819_27a21f74f6d09fdce1e6314900d2af1b.webp 1280w, /mahindraelectricimages/images/group-hero-shot_hua79e853cd7731569a4bfba97803ec937_1845819_284003984f8c38399d691168a564b9af.webp 1600w, /mahindraelectricimages/images/group-hero-shot_hua79e853cd7731569a4bfba97803ec937_1845819_1920x0_resize_q100_h2_box_3.webp 1920w" sizes="(-webkit-min-device-pixel-ratio: 2) 150vw, (min-resolution: 192dpi) 150vw, 100vw" */
+} 
 
 /* TABLET */
 @media only screen and (max-width: 850px) and (min-width: 700px) {

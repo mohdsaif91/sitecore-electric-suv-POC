@@ -39,12 +39,11 @@ const HeroBannerComponent = (props: HeroBannerComponentProps): JSX.Element => {
         return (
           <div key={index} className={` ${HBCCSS.vh100} display-block`}>
             <NextImage
-              priority
               alt="Group Hero Shot"
-              // layout="fill"
-              height={700}
-              width={100}
+              height={613}
+              width={1399}
               field={m.fields.media || ''}
+              loading="lazy"
             />
           </div>
         );

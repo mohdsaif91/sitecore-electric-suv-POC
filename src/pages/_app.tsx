@@ -20,9 +20,6 @@ Router.events.on('routeChangeError', () => NProgress.done());
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;
-  console.log('========================================================');
-  console.log('1');
-  console.log(Component.toString());
 
   return (
     // Use the next-localization (w/ rosetta) library to provide our translation dictionary to the app.

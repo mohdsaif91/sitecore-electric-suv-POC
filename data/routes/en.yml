@@ -24,7 +24,7 @@ placeholders:
       fields:
         heading: header
         logo:
-          src: /data/media/img/Header/logo.svg
+          src: /data/media/img/Header/logo.webp
         menuItems:
           - id: header-brands
           - id: header-design
@@ -37,13 +37,14 @@ placeholders:
           - id: updateform-item2
         formHeader: BE THE FIRST TO KNOW
         formBody: Register your interest and join us on an electrifying journey of discovery.
-    # - componentName: HeroBannerComponent
-    #   fields:
-    #     bannerImage:
-    #       src: /data/media/img/HeroBanner/XUV400_Desktop.webp
-    #     bannerImageMobile:
-    #       src: /data/media/img/HeroBanner/XUV400_Desktop_mobile.webp
-    #     bannerList:
+    - componentName: HeroBannerComponent
+      fields:
+        bannerImage:
+          src: /data/media/img/HeroBanner/XUV400_Desktop.webp
+        bannerImageMobile:
+          src: /data/media/img/HeroBanner/XUV400_Desktop_mobile.webp
+        bannerList:
+          - id: herobanner-item1
     - componentName: TwoColumnComponent
       fields:
         id: brands
@@ -172,7 +173,7 @@ placeholders:
     - componentName: FooterComponent
       fields:
         logo:
-          src: /data/media/img/Header/logo.svg
+          src: /data/media/img/Header/logo.webp
         copyright: Copyright ©2022 Mahindra & Mahindra Ltd
         footList:
           - id: footer-privacy

@@ -12,6 +12,7 @@ type YouTubeComponentProps = ComponentProps & {
 const YouTubeComponent = (props: YouTubeComponentProps): JSX.Element => (
   <div className={`${YCCSS.videoResponsive}`}>
     <iframe
+    loading="lazy"
       width="853"
       height="480"
       src={`https://www.youtube.com/embed/${props.fields.embedId.value}`}

@@ -68,10 +68,6 @@
   height: 100%;
 }
 
-.videoContainerItems {
-  position: absolute;
-  top: 0;
-}
 .richTextContainer {
   display: flex;
   flex-direction: column;
@@ -106,66 +102,6 @@
   object-position: 60% 50%;
 }
 
-/* courosul */
-
-.tabMenu {
-  position: relative;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  z-index: 99;
-  top: auto;
-  left: 50%;
-  bottom: 56px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
-  padding: 10px;
-  gap: 10px;
-  right: auto;
-  transform: translateX(-50%);
-  margin-bottom: -36px;
-  width: 60px;
-}
-
-.heroTab {
-  position: relative;
-  grid-column: 1;
-  grid-row: 1;
-  opacity: 0;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.heroActiveTab {
-  z-index: 1;
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.tabMenu li {
-  text-indent: -5000px;
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  background: #ffffff80;
-}
-
-.tabMenu li.heroInActive {
-  background: #ffffff80;
-}
-
-.tabMenu li.heroActiveTab {
-  background: #fc9f39 !important;
-}
-
 /* MOBILE */
 @media only screen and (max-width: 450px) and (min-width: 340px) {
   .backgroundImage {
@@ -182,12 +118,6 @@
   }
   .bannergrid {
     top: 62%;
-  }
-  .tabMenu {
-    top: auto;
-    left: 89%;
-    right: auto;
-    bottom: 59px;
   }
   .vh100 {
     max-height: 600px;
@@ -240,32 +170,5 @@
   .bodyPush {
     padding-left: 100px;
     padding-right: 100px;
-  }
-  .vh100 {
-    /* height: 600px; */
-  }
-  .tabMenu {
-    bottom: 56px;
-  }
-}
-
-/* animation */
-
-.animationContainer {
-  animation: zoom-in-zoom-out 1s ease alternate;
-}
-
-@keyframes zoom-in-zoom-out {
-  0% {
-    opacity: 0;
-    transform: scale(1, 1);
-  }
-  50% {
-    opacity: 0.5;
-    transform: scale(1.1, 1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
+  } 
 }
